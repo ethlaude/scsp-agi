@@ -50,7 +50,7 @@ def get_running_applications() -> List[Dict[str, str]]:
             version = get_application_version(app_name)
             
             # Only add applications with meaningful names (skip system processes)
-            if app_name and not app_name.startswith('.') and app_name not in ['ps', 'bash', 'sh', 'zsh']:
+            if app_name and not app_name.startswith('.') and app_name not in ['.com.apple','ps', 'bash', 'sh', 'zsh']:
                 applications.append({
                     'name': app_name,
                     'version': version
