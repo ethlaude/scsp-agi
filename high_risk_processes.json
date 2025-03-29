@@ -1,0 +1,11 @@
+{
+    "high_risk_processes": [
+        "svchost.exe", "cmd.exe", "powershell.exe", "wmic.exe", "rundll32.exe", "regsvr32.exe",
+        "schtasks.exe", "taskmgr.exe", "mimikatz.exe", "mshta.exe", "explorer.exe", 
+        "winword.exe", "excel.exe", "outlook.exe", "lsass.exe", "services.exe",
+        "osascript", "launchd", "cron", "bash", "python", "ruby", "perl", "ssh",
+        "curl", "wget", "netcat", "nc", "ftp", "scp", "sftp",
+        "xmrig", "minerd", "bitcoin-miner",
+        "chrome", "chrome.exe", "ChatGPT"
+    ]
+}
