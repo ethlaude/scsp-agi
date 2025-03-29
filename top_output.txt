@@ -1,0 +1,565 @@
+Processes: 553 total, 4 running, 549 sleeping, 3168 threads 
+2025/03/29 15:23:37
+Load Avg: 2.18, 2.25, 2.03 
+CPU usage: 14.88% user, 17.97% sys, 67.13% idle 
+SharedLibs: 689M resident, 145M data, 89M linkedit.
+MemRegions: 565491 total, 4973M resident, 413M private, 1669M shared.
+PhysMem: 15G used (1698M wired, 2947M compressor), 419M unused.
+VM: 267T vsize, 5536M framework vsize, 23074(0) swapins, 78352(0) swapouts.
+Networks: packets: 1461692/1311M in, 881843/955M out.
+Disks: 3388549/74G read, 1116737/21G written.
+
+PID   COMMAND          %CPU
+7080  top              0.0 
+7079  mdworker_shared  0.0 
+7074  Python           0.0 
+7054  mdworker_shared  0.0 
+7038  ReportCrash      0.0 
+7037  XprotectService  0.0 
+7007  Google Chrome He 0.0 
+6998  MTLCompilerServi 0.0 
+6995  spindump_agent   0.0 
+6994  spindump         0.0 
+6992  mapssyncd        0.0 
+6991  lskdd            0.0 
+6990  itunescloudd     0.0 
+6989  VisualizerServic 0.0 
+6988  VisualizerServic 0.0 
+6987  AMPArtworkAgent  0.0 
+6986  milod            0.0 
+6985  AMPLibraryAgent  0.0 
+6984  Music            0.0 
+6897  Google Chrome He 0.0 
+6810  CloudTelemetrySe 0.0 
+6809  swtransparencyd  0.0 
+6808  Google Chrome He 0.0 
+6803  textunderstandin 0.0 
+6793  CoreSpeechXPC    0.0 
+6773  com.apple.audio. 0.0 
+6772  AudioComponentRe 0.0 
+6771  systemsoundserve 0.0 
+6764  accessoryupdater 0.0 
+6746  online-auth-agen 0.0 
+6745  backgroundassets 0.0 
+6744  cloudphotod      0.0 
+6715  IMTransferAgent  0.0 
+6565  zsh              0.0 
+6462  reversetemplated 0.0 
+6461  recentsd         0.0 
+6459  MessagesBlastDoo 0.0 
+6431  CategoriesServic 0.0 
+6426  UsageTrackingAge 0.0 
+6420  findmybeaconingd 0.0 
+6410  IntelligencePlat 0.0 
+6385  ciphermld        0.0 
+6383  webprivacyd      0.0 
+6382  com.apple.access 0.0 
+5831  osanalyticshelpe 0.0 
+5814  com.apple.audio. 0.0 
+5813  com.apple.SiriTT 0.0 
+5812  com.apple.SiriTT 0.0 
+5811  voicebankingd    0.0 
+5810  com.apple.audio. 0.0 
+5809  com.apple.audio. 0.0 
+5808  WardaSynthesizer 0.0 
+5807  com.apple.audio. 0.0 
+5806  com.apple.audio. 0.0 
+5805  com.apple.audio. 0.0 
+5804  MauiAUSP         0.0 
+5803  MacinTalkAUSP    0.0 
+5802  KonaSynthesizer  0.0 
+5801  WardaSynthesizer 0.0 
+5800  SiriAUSP         0.0 
+5799  com.apple.audio. 0.0 
+5798  com.apple.SiriTT 0.0 
+5797  com.apple.SiriTT 0.0 
+5796  naturallanguaged 0.0 
+5794  ecosystemanalyti 0.0 
+5793  CarbonComponentS 0.0 
+5792  AudioComponentRe 0.0 
+5791  PackageThumbnail 0.0 
+5790  extensionkitserv 0.0 
+5789  axassetsd        0.0 
+5786  devicecheckd     0.0 
+5784  inputanalyticsd  0.0 
+5781  SetStoreUpdateSe 0.0 
+5780  backgroundtaskma 0.0 
+5779  SiriSuggestionsB 0.0 
+5778  BackgroundTaskMa 0.0 
+5777  MENotificationAg 0.0 
+5776  MTLAssetUpgrader 0.0 
+5775  siriactionsd     0.0 
+5774  spotlightknowled 0.0 
+5770  Adobe Crash Proc 0.0 
+5766  logd_helper      0.0 
+5756  Google Chrome He 0.0 
+5753  contentlinkingd  0.0 
+5749  linkd            0.0 
+5748  AppPredictionInt 0.0 
+5662  DockHelper       0.0 
+5648  pbs              0.0 
+5643  storekitagent    0.0 
+5642  amfid            0.0 
+5636  ManagedSettingsA 0.0 
+5635  FamilyControlsAg 0.0 
+5634  dmd              0.0 
+5633  ScreenTimeAgent  0.0 
+5632  ContextService   0.0 
+5631  keyboardservices 0.0 
+5622  contactsdonation 0.0 
+5621  CMFSyncAgent     0.0 
+5620  ProtectedCloudKe 0.0 
+5617  progressd        0.0 
+5616  transparencyd    0.0 
+5615  fmfd             0.0 
+5612  TrustedPeersHelp 0.0 
+5611  findmydevice-use 0.0 
+5610  findmydeviced    0.0 
+5609  XProtectBridgeSe 0.0 
+5608  followupd        0.0 
+5607  generativeexperi 0.0 
+5606  modelcatalogd    0.0 
+5605  appleaccountd    0.0 
+5604  applekeystored   0.0 
+5603  iCloudNotificati 0.0 
+5600  iconservicesagen 0.0 
+5595  iconservicesd    0.0 
+5594  iconservicesagen 0.0 
+5593  com.apple.BKAgen 0.0 
+5588  biometrickitd    0.0 
+5586  IMDPersistenceAg 0.0 
+5579  com.apple.CloudP 0.0 
+5574  ASPCarryLog      0.0 
+5573  managedcorespotl 0.0 
+5567  ctkd             0.0 
+5566  mobileactivation 0.0 
+5565  remindd          0.0 
+5564  cfprefsd         0.0 
+5560  cfprefsd         0.0 
+5559  cfprefsd         0.0 
+5558  cfprefsd         0.0 
+5549  securityd_system 0.0 
+5543  dirhelper        0.0 
+5541  DPSubmissionServ 0.0 
+5538  extensionkitserv 0.0 
+5537  dprivacyd        0.0 
+5536  XProtect         0.0 
+5532  symptomsd-diag   0.0 
+5531  cfprefsd         0.0 
+5530  cfprefsd         0.0 
+5529  cfprefsd         0.0 
+5524  mlhostd          0.0 
+5523  PowerUIAgent     0.0 
+5507  calaccessd       0.0 
+5505  keybagd          0.0 
+5504  powerdatad       0.0 
+5500  IFTelemetrySELFI 0.0 
+5499  BiomeSELFIngesto 0.0 
+5498  SiriNCService    0.0 
+5497  IFTranscriptSELF 0.0 
+5496  GMSSELFIngestor  0.0 
+5495  extensionkitserv 0.0 
+5494  SAExtensionOrche 0.0 
+5493  rtcreportingd    0.0 
+5491  triald_system    0.0 
+5490  ContainerMetadat 0.0 
+5488  csnameddatad     0.0 
+5486  smd              0.0 
+5482  swcd             0.0 
+5479  com.apple.AppSto 0.0 
+5478  installcoordinat 0.0 
+5476  amsengagementd   0.0 
+5475  amsaccountsd     0.0 
+5474  AssetCacheTether 0.0 
+5473  storagekitd      0.0 
+5472  usermanagerd     0.0 
+5471  bird             0.0 
+5470  installd         0.0 
+5469  cloudd           0.0 
+5468  geodMachServiceB 0.0 
+5467  system_installd  0.0 
+5466  AssetCache       0.0 
+5465  aneuserd         0.0 
+5464  appstoreagent    0.0 
+5463  backupd-helper   0.0 
+5462  com.apple.quickl 0.0 
+5461  mediaanalysisd   0.0 
+5460  deleted_helper   0.0 
+5459  pkd              0.0 
+5458  deleted          0.0 
+5457  spotlightknowled 0.0 
+5456  coresymbolicatio 0.0 
+5454  ReportCrash      0.0 
+5453  containermanager 0.0 
+5452  containermanager 0.0 
+5451  trustd           0.0 
+5450  trustdFileHelper 0.0 
+5449  cfprefsd         0.0 
+5448  trustd           0.0 
+5447  containermanager 0.0 
+5446  cfprefsd         0.0 
+5445  secinitd         0.0 
+5444  secinitd         0.0 
+5443  secinitd         0.0 
+5442  com.apple.geod   0.0 
+5441  com.apple.geod   0.0 
+5440  com.apple.geod   0.0 
+5439  neagent          0.0 
+5438  com.apple.geod   0.0 
+5437  contactsd        0.0 
+5436  findmylocateagen 0.0 
+5435  donotdisturbd    0.0 
+5434  sandboxd         0.0 
+5433  com.apple.Safari 0.0 
+5432  coreduetd        0.0 
+5431  Siri             0.0 
+5423  Keychain Circle  0.0 
+5415  audiomxd         0.0 
+5412  AssetCacheLocato 0.0 
+5411  CoreServicesUIAg 0.0 
+5410  siriknowledged   0.0 
+5409  ScopedBookmarkAg 0.0 
+5408  photoanalysisd   0.0 
+5407  AppleCredentialM 0.0 
+5404  replayd          0.0 
+5403  idleassetsd      0.0 
+5402  MessagesBlastDoo 0.0 
+5401  businessservices 0.0 
+5399  NFStorageServer  0.0 
+5398  nfcd             0.0 
+5397  icloudmailagent  0.0 
+5396  feedbackd        0.0 
+5395  CommCenter       0.0 
+5394  ospredictiond    0.0 
+5320  siriinferenced   0.0 
+5221  knowledge-agent  0.0 
+5215  promotedcontentd 0.0 
+5166  tccd             0.0 
+5164  proactived       0.0 
+5160  SidecarRelay     0.0 
+5158  ContextStoreAgen 0.0 
+5143  audioanalyticsd  0.0 
+5141  triald           0.0 
+5130  secinitd         0.0 
+5119  cdpd             0.0 
+5116  com.apple.CodeSi 0.0 
+5115  CoreLocationAgen 0.0 
+5094  syncdefaultsd    0.0 
+5039  zsh              0.0 
+4987  zsh              0.0 
+3948  accessoryd       0.0 
+3947  BTLEServer       0.0 
+2998  Google Chrome He 0.0 
+2902  Google Chrome He 0.0 
+2640  distnoted        0.0 
+2509  PerfPowerService 0.0 
+2508  mmaintenanced    0.0 
+2456  Google Chrome He 0.0 
+2409  Google Chrome He 0.0 
+2393  ollama           0.0 
+2382  Google Chrome He 0.0 
+2375  Google Chrome He 0.0 
+2367  Google Chrome He 0.0 
+2359  netbiosd         0.0 
+2343  com.apple.WebKit 0.0 
+2342  com.apple.WebKit 0.0 
+2341  com.apple.WebKit 0.0 
+2272  Google Chrome He 0.0 
+2254  Google Chrome He 0.0 
+2197  Google Chrome He 0.0 
+2196  Google Chrome He 0.0 
+2182  webinspectord    0.0 
+1952  Google Chrome He 0.0 
+1951  Google Chrome He 0.0 
+1907  Google Chrome He 0.0 
+1806  language_server_ 0.0 
+1781  Windsurf Helper  0.0 
+1774  zsh              0.0 
+1771  Windsurf Helper  0.0 
+1748  Windsurf Helper  0.0 
+1685  Windsurf Helper  0.0 
+1673  ACCFinderSync    0.0 
+1665  com.apple.appkit 0.0 
+1642  zsh              0.0 
+1563  zsh              0.0 
+1543  Windsurf Helper  0.0 
+1527  com.apple.mail.S 0.0 
+1516  PowerChime       0.0 
+1458  Google Chrome He 0.0 
+1454  Google Chrome He 0.0 
+1445  fbahelperd       0.0 
+1335  distnoted        0.0 
+1266  dataaccessd      0.0 
+1259  TGOnDeviceInfere 0.0 
+1251  Google Chrome He 0.0 
+1248  tipsd            0.0 
+1247  Google Chrome He 0.0 
+1246  Google Chrome He 0.0 
+1245  Google Chrome He 0.0 
+1234  Google Chrome He 0.0 
+1232  Google Chrome He 0.0 
+1228  SimLaunchHost.ar 0.0 
+1227  Google Chrome He 0.0 
+1224  Google Chrome He 0.0 
+1215  distnoted        0.0 
+1214  TGOnDeviceInfere 0.0 
+1202  diskimagesiod    0.0 
+1199  simdiskimaged    0.0 
+1195  remotepairingd   0.0 
+1186  passd            0.0 
+1175  Messages Assista 0.0 
+1174  peopled          0.0 
+1173  Discord Helper ( 0.0 
+1172  Discord Helper   0.0 
+1169  Discord Helper ( 0.0 
+1165  mdwrite          0.0 
+1160  NewsScoringServi 0.0 
+1147  newsd            0.0 
+1140  webfilterproxyd  0.0 
+1135  CrashReporterSup 0.0 
+1116  wifivelocityd    0.0 
+1102  storedownloadd   0.0 
+1054  systemstats      0.0 
+1050  trustd           0.0 
+1035  webfilterDNSd    0.0 
+946   Windsurf Helper  0.0 
+945   Windsurf Helper  0.0 
+930   Windsurf Helper  0.0 
+929   distnoted        0.0 
+926   fairplayd        0.0 
+924   duetexpertd      0.0 
+923   HomeEnergyWidget 0.0 
+922   SafariWidgetExte 0.0 
+921   ShortcutsWidgetE 0.0 
+920   com.apple.Notes. 0.0 
+919   FindMyWidgetItem 0.0 
+918   TipsWidgetExtens 0.0 
+917   CVMServer        0.0 
+916   FindMyWidgetPeop 0.0 
+915   ollama           0.0 
+914   HomeWidget       0.0 
+913   PeopleWidget_mac 0.0 
+911   Ollama Helper    0.0 
+910   PodcastsWidget   0.0 
+909   Ollama Helper (G 0.0 
+907   parentalcontrols 0.0 
+905   SettingsDaemon   0.0 
+903   ctkahp           0.0 
+901   Ollama           0.0 
+900   ctkahp           0.0 
+897   TextInputMenuAge 0.0 
+896   diagnostics_agen 0.0 
+892   AirPlayUIAgent   0.0 
+889   FrontendAgent    0.0 
+887   icdd             0.0 
+880   corespeechd      0.0 
+878   Discord Helper   0.0 
+876   Discord Helper ( 0.0 
+875   chrome_crashpad_ 0.0 
+872   NewsTag          0.0 
+867   Google Chrome He 0.0 
+862   CloudTelemetrySe 0.0 
+858   Google Chrome He 0.0 
+856   mdbulkimport     0.0 
+854   BTLEServerAgent  0.0 
+853   distnoted        0.0 
+846   Google Chrome He 0.0 
+845   IOUserBluetoothS 0.0 
+843   UniversalControl 0.0 
+839   AppleSpell       0.0 
+838   StocksWidget     0.0 
+837   Google Chrome He 0.0 
+835   wifianalyticsd   0.0 
+834   sysmond          0.0 
+818   zsh              0.0 
+814   login            0.0 
+811   universalAccessA 0.0 
+800   ChatGPTHelper    0.0 
+797   seserviced       0.0 
+783   searchpartyusera 0.0 
+782   WorldClockWidget 0.0 
+777   maild            0.0 
+776   Windsurf Helper  0.0 
+774   Windsurf Helper  0.0 
+773   chrome_crashpad_ 0.0 
+769   bluetoothuserd   0.0 
+767   avconferenced    0.0 
+765   mediaremoteagent 0.0 
+762   adid             0.0 
+758   distnoted        0.0 
+755   StatusKitAgent   0.0 
+751   CalendarWidgetEx 0.0 
+750   PAH_Extension    0.0 
+749   akd              0.0 
+747   networkservicepr 0.0 
+741   CursorUIViewServ 0.0 
+736   nearbyd          0.0 
+735   imklaunchagent   0.0 
+734   com.apple.CloudD 0.0 
+731   familycircled    0.0 
+726   awdd             0.0 
+725   RemindersWidgetE 0.0 
+723   commerce         0.0 
+722   BatteriesAvocado 0.0 
+719   WeatherWidget    0.0 
+718   photolibraryd    0.0 
+717   ScreenTimeWidget 0.0 
+715   parsecd          0.0 
+714   NewsToday2       0.0 
+713   PhotosReliveWidg 0.0 
+711   corespotlightd   0.0 
+710   extensionkitserv 0.0 
+706   lockoutagent     0.0 
+705   routined         0.0 
+701   chrome_crashpad_ 0.0 
+699   Spotlight        0.0 
+696   ACCFinderSync    0.0 
+693   sharingd         0.0 
+687   WiFiAgent        0.0 
+686   com.apple.dock.e 0.0 
+685   useractivityd    0.0 
+684   oahd             0.0 
+681   usernoted        0.0 
+679   wifip2pd         0.0 
+675   NotificationCent 0.0 
+674   chronod          0.0 
+673   WallpaperImageEx 0.0 
+667   imagent          0.0 
+664   UIKitSystem      0.0 
+662   gamepolicyd      0.0 
+661   AMPDeviceDiscove 0.0 
+660   audioaccessoryd  0.0 
+659   intelligentrouti 0.0 
+658   fileproviderd    0.0 
+657   sharedfilelistd  0.0 
+656   heard            0.0 
+654   automountd       0.0 
+652   callservicesd    0.0 
+651   suggestd         0.0 
+650   sociallayerd     0.0 
+649   ViewBridgeAuxili 0.0 
+646   WallpaperAgent   0.0 
+642   filecoordination 0.0 
+641   ContinuityCaptur 0.0 
+639   fontworker       0.0 
+638   coreauthd        0.0 
+636   ctkd             0.0 
+630   Finder           0.0 
+629   fontd            0.0 
+628   SystemUIServer   0.0 
+627   ControlCenter    0.0 
+626   Dock             0.0 
+625   Activity Monitor 0.0 
+624   Terminal         0.0 
+623   distnoted        0.0 
+622   ChatGPT          0.0 
+620   Electron         0.0 
+618   homed            0.0 
+617   nsurlsessiond    0.0 
+616   identityservices 0.0 
+615   Discord          0.0 
+614   rapportd         0.0 
+612   Google Chrome    0.0 
+611   cloudd           0.0 
+606   containermanager 0.0 
+604   assistantd       0.0 
+602   com.apple.hiserv 0.0 
+600   trustd           0.0 
+598   BiomeAgent       0.0 
+597   Messages         0.0 
+596   distnoted        0.0 
+594   secd             0.0 
+586   accountsd        0.0 
+584   usernotification 0.0 
+583   lsd              0.0 
+580   pboard           0.0 
+578   universalaccessd 0.0 
+575   WindowManager    0.0 
+572   UserEventAgent   0.0 
+566   cfprefsd         0.0 
+564   distnoted        0.0 
+563   coreauthd        0.0 
+553   mds_stores       0.0 
+550   com.apple.AppleU 0.0 
+549   com.apple.Driver 0.0 
+548   com.apple.Driver 0.0 
+546   SubmitDiagInfo   0.0 
+545   distnoted        0.0 
+537   RTProtectionDaem 0.0 
+526   searchpartyd     0.0 
+523   backupd          0.0 
+522   suhelperd        0.0 
+520   appleeventsd     0.0 
+519   WirelessRadioMan 0.0 
+518   aned             0.0 
+515   distnoted        0.0 
+514   syspolicyd       0.0 
+513   UVCAssistant     0.0 
+512   cameracaptured   0.0 
+511   appleh13camerad  0.0 
+504   softwareupdated  0.0 
+491   distnoted        0.0 
+485   mDNSResponderHel 0.0 
+484   modelmanagerd    0.0 
+478   distnoted        0.0 
+474   audioclocksyncd  0.0 
+473   symptomsd        0.0 
+459   mDNSResponder    0.0 
+424   mobileassetd     0.0 
+423   biomed           0.0 
+417   distnoted        0.0 
+413   eligibilityd     0.0 
+412   authd            0.0 
+411   distnoted        0.0 
+410   systemstatusd    0.0 
+408   socketfilterfw   0.0 
+404   distnoted        0.0 
+398   analyticsd       0.0 
+396   nehelper         0.0 
+395   nsurlsessiond    0.0 
+394   apfsd            0.0 
+390   coreaudiod       0.0 
+389   airportd         0.0 
+387   coreservicesd    0.0 
+386   lsd              0.0 
+385   contextstored    0.0 
+383   runningboardd    0.0 
+382   loginwindow      0.0 
+381   cfprefsd         0.0 
+380   tccd             0.0 
+378   WindowServer     0.0 
+376   com.apple.cmio.r 0.0 
+375   AirPlayXPCHelper 0.0 
+374   corebrightnessd  0.0 
+372   notifyd          0.0 
+371   bluetoothd       0.0 
+368   KernelEventAgent 0.0 
+367   revisiond        0.0 
+366   logind           0.0 
+362   distnoted        0.0 
+360   dasd             0.0 
+359   autofsd          0.0 
+356   locationd        0.0 
+354   securityd        0.0 
+353   usbmuxd          0.0 
+352   timed            0.0 
+351   launchservicesd  0.0 
+350   apsd             0.0 
+348   opendirectoryd   0.0 
+347   thermalmonitord  0.0 
+344   syslogd          0.0 
+340   diskarbitrationd 0.0 
+339   kernelmanagerd   0.0 
+337   mds              0.0 
+333   watchdogd        0.0 
+328   remoted          0.0 
+324   IOMFB_bics_daemo 0.0 
+323   powerd           0.0 
+321   configd          0.0 
+318   systemstats      0.0 
+315   mediaremoted     0.0 
+314   fseventsd        0.0 
+312   UserEventAgent   0.0 
+310   logd             0.0 
+1     launchd          0.0 
+0     kernel_task      0.0 

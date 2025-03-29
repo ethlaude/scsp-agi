@@ -1,0 +1,8 @@
+Detected High-CPU Processes:
+
+Process Name: ampartworkagent
+PID: 6987
+CPU Usage: 98.2%
+Memory Usage: 0.2349853515625%
+Command Line: /system/library/privateframeworks/amplibrary.framework/versions/a/support/ampartworkagent --launchd
+------------------------------------------------------------

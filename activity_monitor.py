@@ -4,9 +4,10 @@ import json
 import requests
 import time
 import subprocess
+import re
 
-# Set the CPU usage threshold to trigger detection (e.g., 5% for testing)
-cpu_threshold = 5
+# Set the CPU usage threshold to trigger detection (15% to reduce false positives)
+cpu_threshold = 15
 
 # Path to the high-risk processes file
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +17,7 @@ base_dir = os.path.dirname(script_dir)
 possible_paths = [
     os.path.join(script_dir, "high_risk_processes.json"),
     os.path.join(base_dir, "scsp-agi", "high_risk_processes.json"),
-    "/Users/patricktrenchard/Desktop/school stuff/Repos/scsp-agi/high_risk_processes.json"
+    "scsp-agi/high_risk_processes.json"
 ]
 
 # Try to find the file in any of the possible locations
@@ -107,29 +108,47 @@ def save_results_to_file(results):
             file.write("-" * 60 + "\n")
     print("✅ Results saved to results.txt for comparison with btop.")
 
-def run_btop_comparison():
+def run_top_comparison():
     try:
-        print("🔄 Running btop for cross-checking...")
-        subprocess.run(["btop", "-b", "-o", "btop_output.txt"], check=True)
-        print("✅ btop output saved to btop_output.txt")
+        print("🔄 Running top for cross-checking...")
+        # Use macOS top command to capture a single sample of processes
+        result = subprocess.run(["top", "-l", "1", "-stats", "pid,command,cpu"], 
+                             capture_output=True, text=True, check=True)
+        
+        # Save the output to a file
+        with open("top_output.txt", "w") as f:
+            f.write(result.stdout)
+            
+        print("✅ top output saved to top_output.txt")
+    except subprocess.CalledProcessError:
+        print("❌ Error running top command.")
     except FileNotFoundError:
-        print("❌ btop not found. Please install btop and try again.")
+        print("❌ top not found. This is unusual for macOS.")
 
-def compare_with_btop():
+def compare_with_top():
     try:
-        with open("btop_output.txt", "r") as btop_file, open("results.txt", "r") as results_file:
-            btop_data = btop_file.readlines()
+        with open("top_output.txt", "r") as top_file, open("results.txt", "r") as results_file:
+            top_data = top_file.readlines()
             results_data = results_file.readlines()
 
-            print("\n🔍 Cross-checking detected processes with btop output:")
+            print("\n🔍 Cross-checking detected processes with top output:")
             for line in results_data:
                 if "Process Name:" in line:
                     process_name = line.split(":")[1].strip()
-                    for btop_line in btop_data:
-                        if process_name in btop_line:
-                            print(f"✅ Matched in btop: {process_name}")
-                            print(btop_line)
+                    matched = False
+                    for top_line in top_data:
+                        if process_name in top_line:
+                            # Parse CPU usage if available in the line
+                            cpu_match = re.search(r'\b(\d+\.\d+)\b', top_line)
+                            cpu_info = f" - CPU: {cpu_match.group(1)}%" if cpu_match else ""
+                            
+                            print(f"✅ Matched in top: {process_name}{cpu_info}")
+                            print(f"   {top_line.strip()}")
+                            matched = True
                             break
+                    
+                    if not matched:
+                        print(f"❓ Not found in top output: {process_name}")
     except FileNotFoundError:
         print("❌ Comparison files not found. Run the script first to generate results.")
 
@@ -140,19 +159,27 @@ for proc in psutil.process_iter(['pid', 'name', 'exe', 'cmdline']):
     try:
         proc_info = get_detailed_process_info(proc)
         if proc_info and proc_info['cpu_usage'] > cpu_threshold:
-            if any(name in proc_info['name'] for name in high_risk_processes):
-                print(f"\n⚠️ High-CPU Suspicious Process Detected: {proc_info['name']} (PID: {proc_info['pid']})")
+            # Check if this is a high-risk process
+            is_high_risk = any(name in proc_info['name'] for name in high_risk_processes)
+            
+            # Format the output differently based on risk level
+            if is_high_risk:
+                print(f"\n⚠️ High-CPU Suspicious Process Detected: {proc_info['name']} (PID: {proc_info['pid']}) - CPU: {proc_info['cpu_usage']:.1f}%")
                 ai_analysis = analyze_with_gemma(proc_info)
                 if ai_analysis:
                     print("🤖 AI Analysis (Gemma 3):")
                     print(ai_analysis)
-                high_cpu_processes.append(proc_info)
+            else:
+                print(f"\nℹ️ High-CPU Process (Not Suspicious): {proc_info['name']} (PID: {proc_info['pid']}) - CPU: {proc_info['cpu_usage']:.1f}%")
+            
+            # Add to the list regardless of risk level
+            high_cpu_processes.append(proc_info)
     except (psutil.NoSuchProcess, psutil.AccessDenied):
         continue
 
 if high_cpu_processes:
     save_results_to_file(high_cpu_processes)
-    run_btop_comparison()
-    compare_with_btop()
+    run_top_comparison()
+    compare_with_top()
 else:
     print("✅ No suspicious high-CPU processes detected.")
